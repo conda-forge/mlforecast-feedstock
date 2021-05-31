@@ -1,5 +1,5 @@
 {% set name = "mlforecast" %}
-{% set version = "0.0.6" %}
+{% set version = "0.0.7" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/mlforecast-{{ version }}.tar.gz
-  sha256: a4838955e33d4e6ea64687a32a75e156c12e11e77cf476289a1a2fe1aa5800d0
+  sha256: b59b1e260252e7c55b5d4f5f88966e1cea4b0014eb300c1be60ec6f7eb49d344
 
 build:
   number: 0
@@ -28,7 +28,7 @@ requirements:
     - python >=3.6
     - pyyaml
     - typer
-    - window_ops
+    - window-ops
 
 test:
   imports:
