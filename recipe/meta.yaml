@@ -1,5 +1,5 @@
 {% set name = "mlforecast" %}
-{% set version = "0.1.0" %}
+{% set version = "0.2.0" %}
 
 
 package:
@@ -8,13 +8,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/mlforecast-{{ version }}.tar.gz
-  sha256: 6d1ee8b29a1bf526694a042b59527ca5c31adf262089d19803ea45f53132ed6f
+  sha256: 152f5c92bc8097e20bb879493a4c1f25b9932f155e3d81d5e1a8b5ada0c74092
 
 build:
   number: 0
   noarch: python
-  entry_points:
-    - mlforecast=mlforecast.cli:app
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -24,17 +22,12 @@ requirements:
   run:
     - numba
     - pandas
-    - pydantic
     - python >=3.6
-    - pyyaml
-    - typer
     - window-ops
 
 test:
   imports:
     - mlforecast
-  commands:
-    - mlforecast --help
 
 about:
   home: https://github.com/Nixtla/mlforecast
@@ -47,4 +40,4 @@ about:
 
 extra:
   recipe-maintainers:
-    - jose-moralez
+    - jmoralez
