@@ -1,11 +1,11 @@
-About mlforecast
-================
+About mlforecast-feedstock
+==========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/mlforecast-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/Nixtla/mlforecast
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/mlforecast-feedstock/blob/main/LICENSE.txt)
 
 Summary: Scalable machine learning based time series forecasting
 
