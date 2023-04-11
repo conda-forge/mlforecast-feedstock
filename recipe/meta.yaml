@@ -20,7 +20,6 @@ requirements:
     - pip
     - python >=3.6
   run:
-    - fugue
     - numba
     - pandas
     - python >=3.6
