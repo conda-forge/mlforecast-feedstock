@@ -1,5 +1,5 @@
 {% set name = "mlforecast" %}
-{% set version = "0.10.0" %}
+{% set version = "0.11.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/mlforecast-{{ version }}.tar.gz
-  sha256: c65acff268b62f49bc2826a93fc4bc8615f2569c7ba35d02354cc79b7ea313f4
+  sha256: e7a9cc439b6fc112e8991201e15168f2996800228b0c38e551a40d34207c30a5
 
 build:
   number: 0
@@ -18,14 +18,15 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python >=3.8
   run:
+    - coreforecast >=0.0.2
     - numba
     - numpy
     - pandas
-    - python >=3.7
+    - python >=3.8
     - scikit-learn
-    - utilsforecast >=0.0.6
+    - utilsforecast >=0.0.12
     - window-ops
 
 test:
@@ -44,4 +45,4 @@ about:
 extra:
   recipe-maintainers:
     - jmoralez
-    - FedericoGarza
+    - AzulGarza
