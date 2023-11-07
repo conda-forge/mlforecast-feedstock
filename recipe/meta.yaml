@@ -18,14 +18,15 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python >=3.8
   run:
+    - coreforecast >=0.0.2
     - numba
     - numpy
     - pandas
-    - python >=3.7
+    - python >=3.8
     - scikit-learn
-    - utilsforecast >=0.0.6
+    - utilsforecast >=0.0.12
     - window-ops
 
 test:
@@ -44,4 +45,4 @@ about:
 extra:
   recipe-maintainers:
     - jmoralez
-    - FedericoGarza
+    - AzulGarza
