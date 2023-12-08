@@ -20,13 +20,13 @@ requirements:
     - pip
     - python >=3.8
   run:
-    - coreforecast >=0.0.2
+    - coreforecast >=0.0.3
     - numba
     - numpy
     - pandas
     - python >=3.8
     - scikit-learn
-    - utilsforecast >=0.0.12
+    - utilsforecast >=0.0.21
     - window-ops
 
 test:
