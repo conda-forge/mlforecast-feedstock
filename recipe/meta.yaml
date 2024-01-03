@@ -26,7 +26,7 @@ requirements:
     - pandas
     - python >=3.8
     - scikit-learn
-    - utilsforecast >=0.0.21
+    - utilsforecast >=0.0.24
     - window-ops
 
 test:
