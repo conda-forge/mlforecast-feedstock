@@ -1,5 +1,5 @@
 {% set name = "mlforecast" %}
-{% set version = "0.11.3" %}
+{% set version = "0.11.4" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/mlforecast-{{ version }}.tar.gz
-  sha256: da1f311725607d63d1cbbcb65bbe3a9f0544f151b5a4c1fbfb0becc3778bad54
+  sha256: 3f787a0c14c9f6b9e53cc12a9cef74798f6e4b2b07b9de68f7814a5ea88c520b
 
 build:
   number: 0
@@ -26,7 +26,7 @@ requirements:
     - pandas
     - python >=3.8
     - scikit-learn
-    - utilsforecast >=0.0.21
+    - utilsforecast >=0.0.24
     - window-ops
 
 test:
