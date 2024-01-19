@@ -20,7 +20,9 @@ requirements:
     - pip
     - python >=3.8
   run:
+    - cloudpickle
     - coreforecast >=0.0.3
+    - fsspec
     - numba
     - numpy
     - pandas
