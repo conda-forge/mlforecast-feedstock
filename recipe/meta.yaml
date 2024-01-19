@@ -1,5 +1,5 @@
 {% set name = "mlforecast" %}
-{% set version = "0.11.5" %}
+{% set version = "0.11.6" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/mlforecast-{{ version }}.tar.gz
-  sha256: 39430613433dd73eacee06ab47bbe168d1f0ac76427abfc7e1e291a067bb5ad2
+  sha256: e0b58379bd75650cb0c2ba9b462fb562ea9a21651a4134bfbcbf49dea70a58e8
 
 build:
   number: 0
@@ -20,7 +20,9 @@ requirements:
     - pip
     - python >=3.8
   run:
+    - cloudpickle
     - coreforecast >=0.0.3
+    - fsspec
     - numba
     - numpy
     - pandas
