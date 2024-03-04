@@ -21,14 +21,14 @@ requirements:
     - python >=3.8
   run:
     - cloudpickle
-    - coreforecast >=0.0.3
+    - coreforecast >=0.0.7
     - fsspec
     - numba
     - numpy
     - pandas
     - python >=3.8
     - scikit-learn
-    - utilsforecast >=0.0.24
+    - utilsforecast >=0.0.26
     - window-ops
 
 test:
