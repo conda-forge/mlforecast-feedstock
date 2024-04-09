@@ -25,6 +25,7 @@ requirements:
     - fsspec
     - numba
     - numpy
+    - optuna
     - pandas
     - python >=3.8
     - scikit-learn
