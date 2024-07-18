@@ -1,5 +1,5 @@
 {% set name = "mlforecast" %}
-{% set version = "0.13.1" %}
+{% set version = "0.13.2" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/mlforecast-{{ version }}.tar.gz
-  sha256: e837dbeb5bac36ab6acef54156b7d50698177aa69e68d3a0d879e4e16ee40401
+  sha256: ab733d921bd25d18c4e122b821379091d5bd9ba38c278988a26c5680c7db1be0
 
 build:
   number: 0
