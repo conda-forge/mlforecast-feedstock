@@ -34,6 +34,8 @@ requirements:
     - window-ops
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - mlforecast
 
