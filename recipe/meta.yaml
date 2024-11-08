@@ -1,5 +1,5 @@
 {% set name = "mlforecast" %}
-{% set version = "0.13.5" %}
+{% set version = "0.13.6" %}
 
 
 package:
@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/mlforecast-{{ version }}.tar.gz
-  sha256: 14e7474a06d7fda1323102880083f70fd03bfe72358ad465ffee6754a5cad5df
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/mlforecast-{{ version }}.tar.gz
+  sha256: bfe693fa260dba0df325b6fc270ccbd6c055152a7d5871467038403efeb21adb
 
 build:
   number: 0
@@ -18,22 +18,24 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.8
+    - python {{ python_min }}
     - setuptools
   run:
     - cloudpickle
-    - coreforecast >=0.0.7
+    - coreforecast >=0.0.12
     - fsspec
     - numba
     - numpy
     - optuna
     - pandas
-    - python >=3.8
+    - python >={{ python_min }}
     - scikit-learn
-    - utilsforecast >=0.0.26
+    - utilsforecast >=0.2.3
     - window-ops
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - mlforecast
 
