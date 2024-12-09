@@ -22,16 +22,14 @@ requirements:
     - setuptools
   run:
     - cloudpickle
-    - coreforecast >=0.0.12
+    - coreforecast >=0.0.15
     - fsspec
-    - numba
     - numpy
     - optuna
     - pandas
     - python >={{ python_min }}
     - scikit-learn
-    - utilsforecast >=0.2.3
-    - window-ops
+    - utilsforecast >=0.2.9
 
 test:
   requires:
